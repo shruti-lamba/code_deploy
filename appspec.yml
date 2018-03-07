@@ -5,14 +5,14 @@ files:
     destination: /usr/share/nginx/html 
 hooks:
   BeforeInstall:
-    - location: nginx_stop.sh
+    - location: scripts/nginx_stop.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: print.sh
+    - location: scripts/print.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: start_server.sh
+    - location: scripts/start_server.sh
       timeout: 300
       runas: root
