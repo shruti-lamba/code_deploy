@@ -1,4 +1,4 @@
 #!/bin/bash
-sudo apt-get install nginx -y
-service nginx start
+#sudo apt-get install nginx -y
+service nginx stop
 echo "$pwd"
